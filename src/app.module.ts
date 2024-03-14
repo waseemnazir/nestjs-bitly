@@ -5,6 +5,7 @@ import { MongoTypeOrmConfigService } from 'src/database/mongo-typeorm-config.ser
 
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UrlShortnerModule } from './url-shortner/url-shortner.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -19,6 +20,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         return dataSource;
       },
     }),
+    UrlShortnerModule,
   ],
 })
 export class AppModule {}
