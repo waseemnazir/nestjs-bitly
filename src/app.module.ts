@@ -5,6 +5,7 @@ import { MongoTypeOrmConfigService } from 'src/database/mongo-typeorm-config.ser
 
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { HomeModule } from './home/home.module';
 import { UrlShortnerModule } from './url-shortner/url-shortner.module';
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { UrlShortnerModule } from './url-shortner/url-shortner.module';
         return dataSource;
       },
     }),
+    HomeModule,
     UrlShortnerModule,
   ],
 })

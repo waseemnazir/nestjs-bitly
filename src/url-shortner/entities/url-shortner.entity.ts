@@ -4,16 +4,19 @@ import { Entity, ObjectIdColumn, Column, ObjectId } from 'typeorm';
 
 import { EntityHelper } from '../../utils/entity-helper';
 
-@Entity({ name: 'url' })
+@Entity({ name: 'urls' })
 export class Url extends EntityHelper {
   @ObjectIdColumn()
   id: ObjectId;
 
-  @Column({ name: 'originUrl', nullable: false })
+  @Column({ name: 'originUrl' })
   originUrl: string;
 
-  @Column({ name: 'shortUrl', nullable: false })
+  @Column({ name: 'shortUrl' })
   shortUrl: string;
+
+  @Column({ name: 'uuid' })
+  uuid: string;
 
   @Column({
     name: 'clicks',
