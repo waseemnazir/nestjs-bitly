@@ -15,8 +15,11 @@ export class Url extends EntityHelper {
   @Column({ name: 'shortUrl' })
   shortUrl: string;
 
+  @Column({ name: 'bitlyUrl' })
+  bitlyUrl: string;
+
   @Column({ name: 'uuid' })
-  uuid: string;
+  nanoId: string;
 
   @Column({
     name: 'clicks',
