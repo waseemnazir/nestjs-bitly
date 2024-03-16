@@ -1,4 +1,7 @@
-# BACKEND BACKEND_DOMAIN
+# create .env file and add the values for following variables
+
+
+# BACKEND APP
 
 NODE_ENV=dev
 APP_PORT=5000
@@ -13,6 +16,10 @@ BACKEND_DOMAIN=http://localhost:5000/api/v1/
 BASE_URL=http://localhost:5000/api/
 
 # MONGO DB CREDS
-MONGO_DATABASE_URL=mongodb://appice:Devper4mance12@127.0.0.1:11018/aiproddb
-MONGO_DATABASE_DBNAME=aiproddb
+MONGO_DATABASE_URL=
+MONGO_DATABASE_DBNAME=
 
+
+#BITLY
+
+BITLY_ACCESS_TOKEN=
